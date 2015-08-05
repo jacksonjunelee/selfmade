@@ -1,0 +1,6 @@
+<div class="pictures_upload">
+<%= form_tag(drive_upload_path, enctype: "multipart/form-data") do %>
+  <%= file_field_tag "picture", multiple: true, accept: 'image/png,image/gif,image/jpeg', name: "images[]" %>
+<%= submit_tag "Submit Photos" %>
+<% end %>
+</div>
