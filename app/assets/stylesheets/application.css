@@ -13,6 +13,12 @@
  *= require_tree .
  *= require_self
  */
+ @media (min-width: @screen-md-min) {
+   .container-fluid{
+     height: 100vh;
+     width: 100vh;
+   }
+  }
 
 .google_survey {
   height: 100%;
@@ -21,8 +27,8 @@
 
 .container-fluid{
   background-color: black;
-  height: 100vh;
-  width: 100vh;
+  height: 100%;
+  width: 100%;
   text-align: center;
 }
 .row{
