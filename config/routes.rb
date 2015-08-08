@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'pages/google_survey' => 'pages#google_survey', as: :google_survey
   get 'pages/pictures_upload' => 'pages#pictures_upload', as: :pictures_upload
   post 'pages/drive_upload' => 'pages#drive_upload', as: :drive_upload
+
+  get 'quickstart' => 'twilio#quickstart', as: :quickstart
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
